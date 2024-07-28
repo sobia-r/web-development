@@ -1,0 +1,36 @@
+.container{
+    position: relative;
+    display: flex;
+    width: 100%;
+    background-color: whitesmoke;
+    flex-direction: column;
+}
+
+.Heroimage{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    width: 100%;
+}
+
+.image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.greet{
+    padding-top: 5%;
+    color: rgb(20, 141, 118);
+    text-align: center;
+    font-size: larger;
+}
+
+.about{
+    width: 200px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    align-items: center;
+}
