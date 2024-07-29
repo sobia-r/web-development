@@ -4,6 +4,16 @@
     width: 100%;
     background-color: whitesmoke;
     flex-direction: column;
+    align-items: center;
+    height: 800px;
+}
+
+.HeroContent{
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
 }
 
 .Heroimage{
@@ -21,16 +31,115 @@
 }
 
 .greet{
-    padding-top: 5%;
+    padding-top: 15%;
     color: rgb(20, 141, 118);
     text-align: center;
-    font-size: larger;
+    font-size:xx-large;
 }
 
 .about{
-    width: 200px;
+    padding-top: 15%;
+    line-height: 180%;
+    letter-spacing:normal;
     color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-    align-items: center;
+}
+
+footer{
+    padding-top: 30%;
+    font-size: 60px;
+    font-family: serif;
+    color: rgb(218, 250, 226);
+}
+
+/* Media Queries for Responsiveness */
+
+/* Large screens */
+@media (max-width: 1200px) {
+    .container {
+        height: auto; /* Adjust height for larger screens */
+        padding: 10%;
+    }
+    .greet {
+        font-size: x-large;
+    }
+    footer {
+        font-size: 50px;
+    }
+}
+
+/* Medium screens */
+@media (max-width: 992px) {
+    .container {
+        padding: 8%;
+    }
+    .HeroContent {
+        width: 200px;
+    }
+    .greet {
+        font-size: large;
+    }
+    .about {
+        padding-top: 10%;
+        font-size: medium;
+    }
+    footer {
+        font-size: 40px;
+        padding-top: 20%;
+    }
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 5%;
+        height: auto;
+    }
+    .HeroContent {
+        width: 150px;
+    }
+    .image {
+        width: 150px;
+        height: 150px;
+    }
+    .greet {
+        padding-top: 10%;
+        font-size: medium;
+    }
+    .about {
+        padding-top: 8%;
+        font-size: small;
+    }
+    footer {
+        font-size: 30px;
+        padding-top: 15%;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 576px) {
+    .container {
+        padding: 2%;
+        height: auto;
+    }
+    .HeroContent {
+        width: 120px;
+    }
+    .image {
+        width: 120px;
+        height: 120px;
+    }
+    .greet {
+        padding-top: 8%;
+        font-size: small;
+    }
+    .about {
+        padding-top: 5%;
+        font-size: x-small;
+    }
+    footer {
+        font-size: 20px;
+        padding-top: 10%;
+    }
 }

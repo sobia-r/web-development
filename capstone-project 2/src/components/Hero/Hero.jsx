@@ -7,7 +7,7 @@ const Hero = () => {
         <div className={styles.Heroimage}>
             <img className={styles.image} src='src/assets/fi.jpeg' alt='hero pic'/>
         </div>
-        <div>
+        <div className={styles.HeroContent}>
           <p className={styles.greet}>
             Hello.
           </p>
@@ -15,6 +15,9 @@ const Hero = () => {
           <p className={styles.about}>
             I am an iOS and Web Developer. I'm the founder and CTO of The App Brewery. I ❤️ coffee and brew my own beers.
           </p>
+          <footer>
+            ....
+          </footer>
         </div>
 
     </section>
