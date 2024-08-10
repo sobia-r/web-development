@@ -29,27 +29,32 @@
 
 // console.log(bmiCalculator(85,1.8))
 
-var color =['red','green','blue']
-console.log(color.length)
-
 var num=0
 var numArray=[]
-function FizzBuzz(num) {
-    if(i%3==0)
+function FizzBuzz(num,numArray) {
+    if (num < 101)
     {
-        numArray.push(num)
-        console.log("Fizz")
+        if(num%3==0)
+        {
+            numArray.push("Fizz")
+        }
+        else if(num%5==0)
+        {
+            numArray.push("Buzz")
+        }
+        else if(num%3==0 && num%5==0)
+        {
+            numArray.push("FizzBuzz")
+        }
+        else
+        {
+            numArray.push(num)
+        }
+        FizzBuzz(num+1,numArray)
     }
-    else if(i%5==0)
-    {
-        console.log("Buzz")
-    }
-    else if(i%3==0 && i%5==0)
-    {
-        console.log("FizzBuzz")
-    }
-    else
-    {
-        console.log(i)
-    }
+    return numArray
+    
 }
+
+numArray=FizzBuzz(num,numArray)
+numArray
