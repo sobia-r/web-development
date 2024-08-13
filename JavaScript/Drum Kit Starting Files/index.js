@@ -8,8 +8,9 @@ function handleClicked()
 
 //transform to anaymous function
 var drumButtonCount =document.querySelectorAll(".drum").length
+var audio = new Audio("./sounds/tom-1.mp3")
 for(var i=0;i<drumButtonCount;i++)
 {
-    document.querySelectorAll(".drum")[i].addEventListener("click",function(){ alert ("i got clicked")})
+    document.querySelectorAll(".drum")[i].addEventListener("click",function(){ audio.play()})
 }
 
