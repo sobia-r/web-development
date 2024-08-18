@@ -18,6 +18,7 @@ for(var i=0;i<drumButtonCount;i++)
         
         var buttonInnerHTML=this.innerHTML
         makeSound(buttonInnerHTML)
+        buttonAnimation(buttonInnerHTML)
         /*switch (buttonInnerHTML)
         {
             case 'w':
@@ -63,6 +64,7 @@ document.addEventListener("keypress",function(event){
     //var pressed_key=event
     //console.log(pressed_key)
     makeSound(event.key)
+    buttonAnimation(event.key)
     console.log("function called")
 })
 
@@ -105,4 +107,14 @@ function makeSound(key)
                 console.log()
 
     }
+}
+
+function buttonAnimation(currentKey)
+{
+    var activeBtn = document.querySelector("."+currentKey)
+    activeBtn.classList.add("pressed")
+    // add some formating and hold it for some time and clear the added formating.
+    setTimeout(function(){
+        activeBtn.classList.remove("pressed")
+    }, 100)
 }
